@@ -15,10 +15,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class base {
 
 	public WebDriver driver;
+	public Properties prop;
 
 	public WebDriver initilize() throws IOException {
 		String filepath = System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties";
-		Properties prop = new Properties();
+		prop = new Properties();
 		FileInputStream fis = new FileInputStream(filepath);
 		prop.load(fis);
 
@@ -40,6 +41,7 @@ public class base {
 			driver = new InternetExplorerDriver();
 		}
 
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
