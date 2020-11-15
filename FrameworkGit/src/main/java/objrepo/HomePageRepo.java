@@ -19,10 +19,11 @@ public class HomePageRepo {
 
 	@FindBy(xpath = "//input[@type='search']")
 	WebElement searchbox;
+
 	public WebElement getDeals() {
 		return topDeals;
 	}
-	
+
 	public WebElement searchbox() {
 		return searchbox;
 	}
