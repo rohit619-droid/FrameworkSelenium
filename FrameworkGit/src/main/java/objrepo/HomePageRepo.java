@@ -17,15 +17,23 @@ public class HomePageRepo {
 	@FindBy(xpath = "//a[contains(text(),'Top Deals')]")
 	WebElement topDeals;
 
-	@FindBy(xpath = "//input[@type='search']")
-	WebElement searchbox;
+	@FindBy(xpath = "//a[contains(text(),'Flight Booking')]")
+	WebElement flightText;
 
+	@FindBy(xpath = "//input[contains(@placeholder,'Search for Vegetables and Fruits')]")
+	WebElement searchbox;
+	
 	public WebElement getDeals() {
 		return topDeals;
 	}
 
-	public WebElement searchbox() {
-		return searchbox;
+	public WebElement getflightText() {
+		return flightText;
+	}
+	
+	public void getsearchbox() {
+		searchbox.sendKeys("apple");
+		
 	}
 
 }

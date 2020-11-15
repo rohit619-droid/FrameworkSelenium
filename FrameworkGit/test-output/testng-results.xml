@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21684" started-at="2020-11-15T10:33:31Z" finished-at="2020-11-15T10:33:53Z">
+  <suite name="Suite" duration-ms="15020" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21684" started-at="2020-11-15T10:33:31Z" finished-at="2020-11-15T10:33:53Z">
-      <class name="homePage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:homePage@598067a5]" name="setup" is-config="true" duration-ms="17517" started-at="2020-11-15T10:33:31Z" finished-at="2020-11-15T10:33:49Z">
+    <test name="cart Page" duration-ms="11134" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:18Z">
+      <class name="test.cartPage">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.cartPage@5386659f]" name="setup" is-config="true" duration-ms="9550" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="main()[pri:0, instance:homePage@598067a5]" name="main" duration-ms="755" started-at="2020-11-15T10:33:49Z" finished-at="2020-11-15T10:33:50Z">
+        <test-method status="PASS" signature="Veg()[pri:0, instance:test.cartPage@5386659f]" name="Veg" duration-ms="1073" started-at="2020-11-15T12:49:17Z" finished-at="2020-11-15T12:49:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- main -->
-        <test-method status="FAIL" signature="data(java.lang.String)[pri:0, instance:homePage@598067a5]" name="data" duration-ms="3047" started-at="2020-11-15T10:33:50Z" data-provider="getdata" depends-on-methods="homePage.main" finished-at="2020-11-15T10:33:53Z">
+        </test-method> <!-- Veg -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.cartPage@5386659f]" name="teardown" is-config="true" duration-ms="452" started-at="2020-11-15T12:49:18Z" finished-at="2020-11-15T12:49:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.cartPage -->
+    </test> <!-- cart Page -->
+    <test name="home Page" duration-ms="15020" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:22Z">
+      <class name="test.homePage">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.homePage@792b749c]" name="setup" is-config="true" duration-ms="9907" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="data(java.lang.String)[pri:0, instance:test.homePage@792b749c]" name="data" duration-ms="3135" started-at="2020-11-15T12:49:17Z" data-provider="getdata" finished-at="2020-11-15T12:49:20Z">
           <params>
             <param index="0">
               <value>
@@ -35,7 +47,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at homePage.data(homePage.java:36)
+at test.homePage.data(homePage.java:44)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -49,29 +61,28 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- data -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:homePage@598067a5]" name="teardown" is-config="true" duration-ms="119" started-at="2020-11-15T10:33:53Z" finished-at="2020-11-15T10:33:53Z">
+        <test-method status="PASS" signature="homePageClick()[pri:0, instance:test.homePage@792b749c]" name="homePageClick" duration-ms="221" started-at="2020-11-15T12:49:21Z" finished-at="2020-11-15T12:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageClick -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.homePage@792b749c]" name="teardown" is-config="true" duration-ms="1245" started-at="2020-11-15T12:49:21Z" finished-at="2020-11-15T12:49:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- homePage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- test.homePage -->
+    </test> <!-- home Page -->
+  </suite> <!-- Suite -->
 </testng-results>

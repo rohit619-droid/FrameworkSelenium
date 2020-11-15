@@ -1,7 +1,8 @@
 package test;
 
 import java.io.IOException;
-
+import org.apache.logging.log4j.*;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -10,6 +11,9 @@ import base.base;
 import objrepo.HomePageRepo;
 
 public class cartPage extends base {
+	public WebDriver driver;
+
+	Logger log = LogManager.getLogger(cartPage.class);
 
 	@BeforeTest
 	public void setup() throws IOException {
@@ -18,16 +22,19 @@ public class cartPage extends base {
 	}
 
 	@Test
-	public void main() throws IOException, InterruptedException {
+	public void Veg(){
 
-		HomePageRepo p = new HomePageRepo(driver);
-		p.searchbox().sendKeys("brinjal");
+		HomePageRepo a = new HomePageRepo(driver);
+		String text = a.getflightText().getText();
+		log.info("done...........flight" + text);
+		a.getsearchbox();
+		System.out.println("cartEnd");
+
 	}
 
-	
 	@AfterTest
 	public void teardown() {
-		driver.quit();
+		driver.close();
 	}
 
 }
