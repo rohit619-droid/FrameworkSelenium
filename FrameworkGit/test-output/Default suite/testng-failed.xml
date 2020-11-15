@@ -5,7 +5,9 @@
     <classes>
       <class name="homePage">
         <methods>
-          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="main"/>
           <include name="data" invocation-numbers="0"/>
         </methods>
       </class> <!-- homePage -->

@@ -1,3 +1,4 @@
+package test;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -43,6 +44,6 @@ public class homePage extends base {
 
 	@AfterTest
 	public void teardown() {
-		driver.close();
+		driver.quit();
 	}
 }

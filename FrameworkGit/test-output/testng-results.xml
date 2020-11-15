@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13380" started-at="2020-11-15T10:05:03Z" finished-at="2020-11-15T10:05:16Z">
+  <suite name="Default suite" duration-ms="21684" started-at="2020-11-15T10:33:31Z" finished-at="2020-11-15T10:33:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13380" started-at="2020-11-15T10:05:03Z" finished-at="2020-11-15T10:05:16Z">
+    <test name="Default test" duration-ms="21684" started-at="2020-11-15T10:33:31Z" finished-at="2020-11-15T10:33:53Z">
       <class name="homePage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:homePage@cc285f4]" name="setUp" duration-ms="10273" started-at="2020-11-15T10:05:03Z" finished-at="2020-11-15T10:05:13Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:homePage@598067a5]" name="setup" is-config="true" duration-ms="17517" started-at="2020-11-15T10:33:31Z" finished-at="2020-11-15T10:33:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="data(java.lang.String)[pri:0, instance:homePage@cc285f4]" name="data" duration-ms="3052" started-at="2020-11-15T10:05:13Z" data-provider="getdata" depends-on-methods="homePage.setUp" finished-at="2020-11-15T10:05:16Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="main()[pri:0, instance:homePage@598067a5]" name="main" duration-ms="755" started-at="2020-11-15T10:33:49Z" finished-at="2020-11-15T10:33:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="FAIL" signature="data(java.lang.String)[pri:0, instance:homePage@598067a5]" name="data" duration-ms="3047" started-at="2020-11-15T10:33:50Z" data-provider="getdata" depends-on-methods="homePage.main" finished-at="2020-11-15T10:33:53Z">
           <params>
             <param index="0">
               <value>
@@ -31,7 +35,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at homePage.data(homePage.java:29)
+at homePage.data(homePage.java:36)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -63,6 +67,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- data -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:homePage@598067a5]" name="teardown" is-config="true" duration-ms="119" started-at="2020-11-15T10:33:53Z" finished-at="2020-11-15T10:33:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- homePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
