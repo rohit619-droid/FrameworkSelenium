@@ -7,24 +7,38 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
+import resources.ExtentReportNG;
 import utils.utitilty;
 
 public class Listeners extends utitilty implements ITestListener {
 
+	ExtentReports extent = ExtentReportNG.getReport();
+	
+	ExtentTest test;
+	ThreadLocal<ExtentTest> extentest = new ThreadLocal<ExtentTest>();
+
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-
+		test = extent.createTest(result.getMethod().getMethodName());
+		extentest.set(test);
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+		//test.log(Status.PASS, "Test Passed");
+		extentest.get().log(Status.PASS, "Test Passed");
 
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
+
+	//	test.fail(result.getThrowable());
+		extentest.get().fail(result.getThrowable());
 		WebDriver driver = null;
 		String testMethodName = result.getMethod().getMethodName();
 
@@ -35,7 +49,7 @@ public class Listeners extends utitilty implements ITestListener {
 			e.printStackTrace();
 		}
 		try {
-			getScreenshot(testMethodName,driver);
+			extentest.get().addScreenCaptureFromPath(getScreenshot(testMethodName, driver), testMethodName);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -63,7 +77,7 @@ public class Listeners extends utitilty implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
+		extent.flush();
 
 	}
 

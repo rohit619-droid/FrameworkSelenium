@@ -11,9 +11,10 @@ import org.openqa.selenium.WebDriver;
 public class utitilty {
 	public WebDriver driver;
 
-	public void getScreenshot(String s, WebDriver driver) throws IOException {
+	public String getScreenshot(String s, WebDriver driver) throws IOException {
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file,
-				new File(System.getProperty("user.dir") + "\\reports\\screenshot" + s + ".png"));
+		String destinationFile = System.getProperty("user.dir") + "\\reports\\screenshot" + s + ".png";
+		FileUtils.copyFile(file, new File(destinationFile));
+		return destinationFile;
 	}
 }

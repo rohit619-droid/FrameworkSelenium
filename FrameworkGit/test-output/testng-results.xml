@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15020" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:22Z">
+  <suite name="Suite" duration-ms="23315" started-at="2020-11-15T13:46:35Z" finished-at="2020-11-15T13:46:58Z">
     <groups>
     </groups>
-    <test name="cart Page" duration-ms="11134" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:18Z">
+    <test name="cart Page" duration-ms="20773" started-at="2020-11-15T13:46:35Z" finished-at="2020-11-15T13:46:55Z">
       <class name="test.cartPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.cartPage@5386659f]" name="setup" is-config="true" duration-ms="9550" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.cartPage@436c81a3]" name="setup" is-config="true" duration-ms="15660" started-at="2020-11-15T13:46:35Z" finished-at="2020-11-15T13:46:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Veg()[pri:0, instance:test.cartPage@5386659f]" name="Veg" duration-ms="1073" started-at="2020-11-15T12:49:17Z" finished-at="2020-11-15T12:49:18Z">
+        <test-method status="PASS" signature="Veg()[pri:0, instance:test.cartPage@436c81a3]" name="Veg" duration-ms="418" started-at="2020-11-15T13:46:50Z" finished-at="2020-11-15T13:46:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Veg -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:test.cartPage@5386659f]" name="teardown" is-config="true" duration-ms="452" started-at="2020-11-15T12:49:18Z" finished-at="2020-11-15T12:49:18Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.cartPage@436c81a3]" name="teardown" is-config="true" duration-ms="4627" started-at="2020-11-15T13:46:51Z" finished-at="2020-11-15T13:46:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- test.cartPage -->
     </test> <!-- cart Page -->
-    <test name="home Page" duration-ms="15020" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:22Z">
+    <test name="home Page" duration-ms="23315" started-at="2020-11-15T13:46:35Z" finished-at="2020-11-15T13:46:58Z">
       <class name="test.homePage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.homePage@792b749c]" name="setup" is-config="true" duration-ms="9907" started-at="2020-11-15T12:49:07Z" finished-at="2020-11-15T12:49:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.homePage@f107c50]" name="setup" is-config="true" duration-ms="17810" started-at="2020-11-15T13:46:35Z" finished-at="2020-11-15T13:46:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="data(java.lang.String)[pri:0, instance:test.homePage@792b749c]" name="data" duration-ms="3135" started-at="2020-11-15T12:49:17Z" data-provider="getdata" finished-at="2020-11-15T12:49:20Z">
+        <test-method status="FAIL" signature="data(java.lang.String)[pri:0, instance:test.homePage@f107c50]" name="data" duration-ms="3117" started-at="2020-11-15T13:46:52Z" data-provider="getdata" finished-at="2020-11-15T13:46:56Z">
           <params>
             <param index="0">
               <value>
@@ -74,11 +74,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- data -->
-        <test-method status="PASS" signature="homePageClick()[pri:0, instance:test.homePage@792b749c]" name="homePageClick" duration-ms="221" started-at="2020-11-15T12:49:21Z" finished-at="2020-11-15T12:49:21Z">
+        <test-method status="PASS" signature="homePageClick()[pri:0, instance:test.homePage@f107c50]" name="homePageClick" duration-ms="520" started-at="2020-11-15T13:46:56Z" finished-at="2020-11-15T13:46:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageClick -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:test.homePage@792b749c]" name="teardown" is-config="true" duration-ms="1245" started-at="2020-11-15T12:49:21Z" finished-at="2020-11-15T12:49:22Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.homePage@f107c50]" name="teardown" is-config="true" duration-ms="1149" started-at="2020-11-15T13:46:57Z" finished-at="2020-11-15T13:46:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
