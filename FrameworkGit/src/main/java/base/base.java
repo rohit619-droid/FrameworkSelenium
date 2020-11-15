@@ -24,17 +24,17 @@ public class base {
 
 		String browserName = prop.getProperty("browser");
 
-		if (browserName == "chrome") {
+		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe");
 
 			driver = new ChromeDriver();
-		} else if (browserName == "firefox") {
+		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\geckodriver.exe");
 
 			driver = new FirefoxDriver();
-		} else if (browserName == "ie") {
+		} else if (browserName.equals("ie")) {
 			System.setProperty("webdriver.ie.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
