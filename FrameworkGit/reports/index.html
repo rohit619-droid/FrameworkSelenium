@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Framework</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 15, 2020 10:15:10 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 16, 2020 06:14:15 PM</span></a>
 </li>
 </ul>
 </div>
@@ -80,6 +80,44 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Veg</p>
+            <p class="text-sm">
+              <span>18:14:41 PM</span> / <span>30:00:636</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Veg</h5>
+<span class='badge badge-success'>11.16.2020 18:14:41</span>
+<span class='badge badge-danger'>11.16.2020 18:14:42</span>
+<span class='badge badge-default'>30:00:636</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:14:42 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
         <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
@@ -87,7 +125,7 @@
           <div class="test-detail">
             <p class="name">data</p>
             <p class="text-sm">
-              <span>22:15:35 PM</span> / <span>30:05:751</span>
+              <span>18:14:55 PM</span> / <span>30:04:067</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -96,9 +134,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">data</h5>
-<span class='badge badge-success'>11.15.2020 22:15:35</span>
-<span class='badge badge-danger'>11.15.2020 22:15:41</span>
-<span class='badge badge-default'>30:05:751</span>
+<span class='badge badge-success'>11.16.2020 18:14:55</span>
+<span class='badge badge-danger'>11.16.2020 18:14:59</span>
+<span class='badge badge-default'>30:04:067</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 </div>
 </div>
@@ -112,7 +150,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>10:15:39 PM</td>
+        <td>6:14:58 PM</td>
         <td>
           <textarea readonly class="code-block">java.lang.AssertionError: expected [GREENKART] but found [blukart]
 	at org.testng.Assert.fail(Assert.java:96)
@@ -135,53 +173,24 @@
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </textarea>
           
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="1"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Veg</p>
-            <p class="text-sm">
-              <span>22:15:35 PM</span> / <span>30:02:065</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Veg</h5>
-<span class='badge badge-success'>11.15.2020 22:15:35</span>
-<span class='badge badge-danger'>11.15.2020 22:15:37</span>
-<span class='badge badge-default'>30:02:065</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:15:37 PM</td>
-        <td>
-          Test Passed
         </td>
       </tr>
   </tbody>
@@ -196,7 +205,7 @@
           <div class="test-detail">
             <p class="name">homePageClick</p>
             <p class="text-sm">
-              <span>22:15:41 PM</span> / <span>30:00:193</span>
+              <span>18:14:59 PM</span> / <span>30:00:261</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -205,9 +214,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">homePageClick</h5>
-<span class='badge badge-success'>11.15.2020 22:15:41</span>
-<span class='badge badge-danger'>11.15.2020 22:15:41</span>
-<span class='badge badge-default'>30:00:193</span>
+<span class='badge badge-success'>11.16.2020 18:14:59</span>
+<span class='badge badge-danger'>11.16.2020 18:14:59</span>
+<span class='badge badge-default'>30:00:261</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 </div>
 </div>
@@ -217,7 +226,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:15:41 PM</td>
+        <td>6:14:59 PM</td>
         <td>
           Test Passed
         </td>
@@ -268,7 +277,7 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:15:35 PM</td>
+<td>18:14:55 PM</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>data</a>
 </td>
@@ -290,13 +299,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 15, 2020 10:15:10 PM</h3>
+<h3>Nov 16, 2020 06:14:15 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 15, 2020 10:15:43 PM</h3>
+<h3>Nov 16, 2020 06:15:00 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -366,7 +375,7 @@
 </div></div>
 <script>
 var timeline = {
-"data":5.751,"Veg":2.065,"homePageClick":0.193
+"Veg":0.636,"data":4.067,"homePageClick":0.261
 };
 </script>
 <div class="row">
