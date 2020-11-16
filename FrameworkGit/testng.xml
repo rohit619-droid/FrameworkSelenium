@@ -4,12 +4,12 @@
 	<listeners>
 		<listener class-name="test.Listeners" />
 	</listeners>
-	<test thread-count="5" name="cartPage">
+	<test thread-count="2" name="cartPage">
 		<classes>
 			<class name="test.cartPage" />
 		</classes>
 	</test>
-	<test thread-count="5" name="homePage">
+	<test thread-count="2" name="homePage">
 		<classes>
 			<class name="test.homePage" />
 		</classes>
