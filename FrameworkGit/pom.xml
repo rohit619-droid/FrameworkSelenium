@@ -28,6 +28,7 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
+						<forkMode>never</forkMode>
 					</configuration>
 				</plugin>
 			</plugins>
