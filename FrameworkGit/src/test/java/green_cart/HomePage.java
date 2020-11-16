@@ -1,4 +1,4 @@
-package test;
+package green_cart;
 
 import java.io.IOException;
 
@@ -15,10 +15,10 @@ import base.base;
 import objrepo.HomePageRepo;
 import objrepo.WebtableRepo;
 
-public class homePage extends base {
+public class HomePage extends base {
 	public WebDriver driver;
 
-	Logger log = LogManager.getLogger(cartPage.class);
+	Logger log = LogManager.getLogger(CartPage.class);
 
 	@BeforeTest
 	public void setup() throws IOException {

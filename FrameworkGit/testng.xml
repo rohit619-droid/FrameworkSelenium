@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>
-		<listener class-name="test.Listeners" />
+		<listener class-name="green_cart.Listeners" />
 	</listeners>
-	<test thread-count="2" name="cartPage">
+	<test thread-count="2" name="CartPage">
 		<classes>
-			<class name="test.cartPage" />
+			<class name="green_cart.CartPage" />
 		</classes>
 	</test>
-	<test thread-count="2" name="homePage">
+	<test thread-count="2" name="HomePage">
 		<classes>
-			<class name="test.homePage" />
+			<class name="green_cart.HomePage" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

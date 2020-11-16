@@ -1,4 +1,4 @@
-package test;
+package green_cart;
 
 import java.io.IOException;
 import org.apache.logging.log4j.*;
@@ -10,10 +10,10 @@ import org.testng.annotations.Test;
 import base.base;
 import objrepo.HomePageRepo;
 
-public class cartPage extends base {
+public class CartPage extends base {
 	public WebDriver driver;
 
-	Logger log = LogManager.getLogger(cartPage.class);
+	Logger log = LogManager.getLogger(CartPage.class);
 
 	@BeforeTest
 	public void setup() throws IOException {
