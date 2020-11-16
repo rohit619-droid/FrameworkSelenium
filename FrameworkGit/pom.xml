@@ -53,11 +53,6 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.maven.surefire</groupId>
-			<artifactId>surefire-testng</artifactId>
-			<version>3.0.0-M4</version>
-		</dependency>
-		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-testng</artifactId>
 			<version>1.2.5</version>
